@@ -43,8 +43,11 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.11.2",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
     "morgan": "^1.7.0"
   }
 }
