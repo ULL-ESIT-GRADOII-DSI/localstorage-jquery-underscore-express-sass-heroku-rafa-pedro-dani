@@ -1,0 +1,31 @@
+{
+  "name": "rpd7",
+  "description": "Práctica: Comma Separated Values",
+  "main": "index.js",
+  "authors": [
+    "Rafael Herrero",
+    "Pedro Ramos",
+    "Daniel Ramos"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "JQuery",
+    "LocalStorage",
+    "Underscore",
+    "Express",
+    "Sass",
+    "Materialize",
+    "Heroku",
+    "HTML",
+    "Javascript",
+    "CSS"
+  ],
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

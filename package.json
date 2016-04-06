@@ -1,0 +1,45 @@
+{
+  "name": "rpd7",
+  "version": "1.0.0",
+  "description": "Práctica: Comma Separated Values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani.git"
+  },
+  "keywords": [
+    "JQuery",
+    "LocalStorage",
+    "Underscore",
+    "Express",
+    "Sass",
+    "Materialize",
+    "Heroku",
+    "HTML",
+    "Javascript",
+    "CSS"
+  ],
+  "author": [
+    "Rafael Herrero",
+    "Daniel Ramos",
+    "Pedro Ramos"
+  ],
+  "contributors": [
+    "Rafael Herrero",
+    "Pedro Ramos",
+    "Daniel Ramos"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani#readme",
+  "engines": {
+    "npm": "^3.6.0",
+    "node": "^5.6.0"
+  },
+  "dependencies": {}
+}
