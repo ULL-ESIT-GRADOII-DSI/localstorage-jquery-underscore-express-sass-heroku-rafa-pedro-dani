@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    sass = require('gulp-sass');
 
 // Tarea que debería encapsular todo
 gulp.task('serve', ['browser-sync'], function() {
@@ -22,7 +23,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
 gulp.task('nodemon', function () {
     nodemon({
         script: 'bin/www',
-        ext: 'js html ejs',
+        ext: 'js html ejs css',
         env: {'NODE_ENV': 'development'}
     }).on('start', function(){
         if (!called) {
@@ -30,4 +31,10 @@ gulp.task('nodemon', function () {
             cb();
         }
     });
+});
+
+gulp.task('sass', function () {
+    return gulp.src('./public/sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./public/css'));
 });
