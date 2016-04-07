@@ -4,3 +4,8 @@
 
     exports = undefined;
 }(this));
+
+
+function soyUnCaracol() {
+    return "Hola, soy un caracol";
+}
