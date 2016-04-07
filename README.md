@@ -15,3 +15,5 @@ Dependencias globales:
 * `bower`
 * `jshint`
 * `jscs`
+
+Hay que tener instaladas las gemas `sass` y `scss-lint`

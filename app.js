@@ -11,7 +11,6 @@ app.set('views', path.join(__dirname, 'views'));
 // Motor de las vistas, que podría ser Jade, Mustache. Pero en la práctica vamos
 // A usar EJS (EmbeddedJS)
 app.set('view engine', 'ejs');
-app.locals._ = '_';
 
 // Establecer el modo del logger
 app.use(logger('dev'));
