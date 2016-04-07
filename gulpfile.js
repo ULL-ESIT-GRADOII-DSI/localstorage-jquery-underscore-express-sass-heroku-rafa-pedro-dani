@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
-    jshint = require('gulp-jshint');
+    jshint = require('gulp-jshint'),
+    jscs = require('gulp-jscs');
 
 
 // Tarea que debería encapsular todo.
@@ -59,4 +60,10 @@ gulp.task('lint:jshint', function () {
     gulp.src(['public/js/*.js', 'routes/*.js'])
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('lint:jscs', function () {
+    return gulp.src('gulpfile.js')
+        .pipe(jscs())
+        .pipe(jscs.reporter());
 });
