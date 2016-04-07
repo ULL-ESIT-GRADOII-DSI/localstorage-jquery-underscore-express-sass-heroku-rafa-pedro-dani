@@ -3,10 +3,12 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass');
 
-// Tarea que debería encapsular todo
-gulp.task('serve', ['browser-sync'], function() {
-    //Compilar SASS y meter en CSS
-});
+// Tarea que debería encapsular todo.
+// Tiene que recargar el servidor si se produce algún cambio
+//                    el navegador si se produce algún cambio
+//                    mantener la tarea watch de sass
+//                    ejecutar la tarea sass, por si hubo algún cambioee
+gulp.task('serve', ['browser-sync', 'sass:watch', 'sass']);
 
 // Browser sync, espera a que nodemon se reinicie y si lo hace, recarga el
 // navegador del cliente.
@@ -33,8 +35,18 @@ gulp.task('nodemon', function () {
     });
 });
 
+// Tarea que compila todos los sass del directorio /public/sass y los coloca
+// en /public/css.
+
 gulp.task('sass', function () {
     return gulp.src('./public/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./public/css'));
+});
+
+// Esta tarea vigila el directorio /public/sass y relanza la tarea sass en
+// en caso de que cambie algún fichero.
+
+gulp.task('sass:watch', function () {
+    gulp.watch('./public/sass/*.scss', ['sass']);
 });

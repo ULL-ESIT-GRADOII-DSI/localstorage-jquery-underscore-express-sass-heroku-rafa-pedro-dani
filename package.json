@@ -48,6 +48,7 @@
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.0.6",
+    "gulp-sass": "^2.2.0",
     "morgan": "^1.7.0"
   }
 }

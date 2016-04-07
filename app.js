@@ -27,6 +27,7 @@ app.locals.ENV_DEVELOPMENT = env == 'development';
 
 // Ruta por defecto, que vaya al index.ejs
 app.use('/', index);
+app.use(express.static(__dirname + '/public'));
 
 // Si se produce un error en la ruta, enviamos un not found
 app.use(function(req, res, next) {
