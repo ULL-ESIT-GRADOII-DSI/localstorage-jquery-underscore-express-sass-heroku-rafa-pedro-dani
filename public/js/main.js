@@ -1,1 +1,6 @@
-console.log("Hola Mundo!");
+(function(exports) {
+    'use strict';
+    console.log('Hola Mundo!');
+
+    exports = undefined;
+}(this));

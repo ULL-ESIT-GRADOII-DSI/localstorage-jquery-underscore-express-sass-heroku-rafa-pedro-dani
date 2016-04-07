@@ -10,3 +10,8 @@ For more information look at:
 * See it working at [CSV en GitHub Pages](http://crguezl.github.io/csv/)
 * See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.
 
+Dependencias globales:
+* `gulp`
+* `bower`
+* `jshint`
+* `jscs`
