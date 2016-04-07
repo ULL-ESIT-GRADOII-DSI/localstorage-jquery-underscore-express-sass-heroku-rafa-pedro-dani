@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
     browserSync = require('browser-sync'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    jshint = require('gulp-jshint');
+
 
 // Tarea que debería encapsular todo.
 // Tiene que recargar el servidor si se produce algún cambio
@@ -49,4 +51,12 @@ gulp.task('sass', function () {
 
 gulp.task('sass:watch', function () {
     gulp.watch('./public/sass/*.scss', ['sass']);
+});
+
+// Tarea para pasar el JSHint a el código
+
+gulp.task('lint:jshint', function () {
+    gulp.src(['public/js/*.js', 'routes/*.js'])
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish'));
 });
