@@ -1,11 +1,11 @@
 {
-  "name": "pruebaheroku",
+  "name": "rpd7",
   "version": "1.0.0",
   "description": "Práctica: Comma Separated Values",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "server.js"
   },
   "repository": {
     "type": "git",
