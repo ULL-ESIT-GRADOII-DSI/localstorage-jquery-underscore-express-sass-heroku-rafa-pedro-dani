@@ -28,3 +28,23 @@ Hay que tener instaladas las gemas `sass` y `scss-lint`
 * heroku create
 * heroku apps
 * heroku logs
+
+###Repositorio GitHuB
+
+* [Repositorio](https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani)
+
+###Página de la práctica en Heroku
+
+* [Web](https://secret-headland-16989.herokuapp.com/)
+
+###Página del campus de la asignatura
+* [Campus Virtual DSI](https://campusvirtual.ull.es/1516/course/view.php?id=144)
+
+###Página de la descripción de la práctica
+* [Descripción Práctica desde el campus](https://campusvirtual.ull.es/1516/mod/page/view.php?id=187375)
+
+###Páginas de los autores
+
+* [Rafa Herrero](http://rafaherrero.github.io/)
+* [Daniel Ramos](http://danielramosacosta.github.io/#/)
+* [Pedro Ramos](http://alu0100505078.github.io/)
