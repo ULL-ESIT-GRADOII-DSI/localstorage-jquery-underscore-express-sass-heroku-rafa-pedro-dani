@@ -2,10 +2,10 @@
   "name": "rpd7",
   "version": "1.0.0",
   "description": "Práctica: Comma Separated Values",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js"
+    "start": "index.js"
   },
   "repository": {
     "type": "git",
