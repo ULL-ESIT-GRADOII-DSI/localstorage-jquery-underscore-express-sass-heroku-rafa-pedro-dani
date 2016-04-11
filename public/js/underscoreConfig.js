@@ -3,4 +3,4 @@ _.templateSettings = {
     evaluate: /\{\{(?!=)(.*?)\}\}/g
 };
 
-all.innerHTML = _.template(underscore_content.innerHTML)();
+$('#all').html(_.template($('#underscoreContent').html())());

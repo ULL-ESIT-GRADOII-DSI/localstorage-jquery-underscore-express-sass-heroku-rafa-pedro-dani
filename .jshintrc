@@ -89,6 +89,7 @@
     "globals"       : {
         "require": false,
         "module": false,
-        "$": false
+        "$": false,
+        "_": false
     }        // additional predefined global variables
 }
