@@ -6,6 +6,7 @@
 }(this));
 
 
-function soyUnCaracol() {
+function soyUnCaracol(param) {
+    console.log(param);
     return "Hola, soy un caracol";
 }

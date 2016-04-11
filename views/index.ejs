@@ -1,5 +1,5 @@
 <% include header %>
-<% include navbar %>
+    <% include navbar %>
     <!-- los símbolos de menor y mayor con el porcentaje, se usan para poner
          javascript dentro y que se ejecute del lado del servidor -->
 
@@ -7,8 +7,10 @@
 
     <p>My first paragraph.</p>
 
-    <p>Estado de la variable de prueba: <%=prueba %></p>
-    <a href="#">Soy un enlace</a>
+    <form action="/csv" method="post">
+        <textarea rows="4" cols="50"></textarea>
+        <input type="submit">
+    </form>
 
     <!-- Dentro de los dobles corechetes se pone el javascript que se quiere
          ejecutar del lado del cliente.
