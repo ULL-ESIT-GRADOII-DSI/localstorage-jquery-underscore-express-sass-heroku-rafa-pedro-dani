@@ -18,7 +18,7 @@ gulp.task('serve', ['browser-sync', 'sass:watch', 'sass']);
 gulp.task('browser-sync', ['nodemon'], function() {
     browserSync.init(null, {
         proxy: 'http://0.0.0.0:8080',
-        files: ['public/**/*.*', 'views/*.ejs'],
+        files: ['public/**/*.*', 'views/*.ejs', 'routes/*.js'],
         port: 7000
     });
 });

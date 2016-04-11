@@ -1,9 +1,16 @@
 var express = require('express'),
     path = require('path'),
-    logger = require('morgan');
+    logger = require('morgan'),
+    bodyParser = require('body-parser');
 
 var app = express();
 
+// Usar bodyParser como Middleware
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+app.use(bodyParser.json());
 
 // Establecer la ruta de las vistas
 app.set('views', path.join(__dirname, 'views'));

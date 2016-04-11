@@ -5,6 +5,14 @@
 
     <h1>CSV</h1>
 
-    <p>My first paragraph.</p>
+    <table>
+        <% csv.forEach(function(row) { %>
+            <tr>
+                <% row.forEach(function(cell) { %>
+                    <td><%=cell %></td>
+                <% }); %>
+            </tr>
+        <% }); %>
+    </table>
 
 <% include footer %>

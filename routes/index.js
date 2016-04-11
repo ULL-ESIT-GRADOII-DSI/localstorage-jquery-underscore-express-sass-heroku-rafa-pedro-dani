@@ -9,22 +9,20 @@ router.get('/', function(req, res) {
     });
 });
 
-router.get('/csv', function(req, res) {
-    console.log(req.body);
-    res.render('csv', {
-        title: 'CSV Validator'
-    });
-});
-
 router.post('/csv', function(req, res) {
-    console.log(req);
-    console.log(res);
+    console.log(req.body.csvData);
+
+    // Transformar req.body.csvData en un array como el de abajo
+
+    var csvArr = [
+        ["Cabeza 1", "Cabeza 2", "Cabeza 3"],
+        ["Dato 1", "Dato 2", "Dato 3"],
+        ["Datoto 1", "Datoto 2", "Datoto 3"],
+    ]
     res.render('csv', {
         title: 'CSV Validator',
-        req: req,
-        res: res
+        csv: csvArr
     });
 });
-
 
 module.exports = router;
