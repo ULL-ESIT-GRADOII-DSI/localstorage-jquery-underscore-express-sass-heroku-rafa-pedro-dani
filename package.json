@@ -4,7 +4,8 @@
   "description": "Práctica: Comma Separated Values",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -45,7 +46,8 @@
     "express": "^4.13.4",
     "ejs": "^2.4.1",
     "morgan": "^1.7.0",
-    "body-parser": "^1.15.0"
+    "body-parser": "^1.15.0",
+    "bower": "1.6.5"
   },
   "devDependencies": {
     "browser-sync": "^2.11.2",
