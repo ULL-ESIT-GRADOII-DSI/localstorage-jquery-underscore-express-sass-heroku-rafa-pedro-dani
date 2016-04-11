@@ -1,6 +1,9 @@
 <% include header %>
 
-    <h1><%- error.status %> <%- message %></h1>
+    <pre>
+        <%- error.status %> <%- message %>
+    </pre>
+    <br>
     <pre>
     	<%- error.stack %>
     </pre>

@@ -1,7 +1,5 @@
 <% include header %>
     <% include navbar %>
-    <!-- los símbolos de menor y mayor con el porcentaje, se usan para poner
-         javascript dentro y que se ejecute del lado del servidor -->
 
     <h1><%=title %></h1>
 
@@ -11,12 +9,5 @@
         <textarea rows="4" cols="50" name="csvData"></textarea>
         <input type="submit">
     </form>
-
-    <!-- Dentro de los dobles corechetes se pone el javascript que se quiere
-         ejecutar del lado del cliente.
-         esto debería imprimir lo que devuelve la función 'soyUnCaracol' del
-         main.js -->
-    {{=soyUnCaracol()}}
-
 
 <% include footer %>

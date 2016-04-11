@@ -7,8 +7,8 @@
 
     <table>
         <% csv.forEach(function(row) { %>
-            <tr>
-                <% row.forEach(function(cell) { %>
+            <tr class="<%= row.rowClass %>">
+                <% row.value.forEach(function(cell) { %>
                     <td><%=cell %></td>
                 <% }); %>
             </tr>
