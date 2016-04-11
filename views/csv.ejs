@@ -6,12 +6,20 @@
     <h1>CSV</h1>
 
     <table>
-        <% csv.forEach(function(row) { %>
-            <tr class="<%= row.rowClass %>">
-                <% row.value.forEach(function(cell) { %>
-                    <td><%=cell %></td>
-                <% }); %>
-            </tr>
+        <% csv.forEach(function(row, index) { %>
+            <% if(index == 0) { %>
+                <tr class="<%= row.rowClass %>">
+                    <% row.value.forEach(function(cell) { %>
+                        <th><%=cell %></th>
+                    <% }); %>
+                </tr>
+            <% } else { %>
+                <tr class="<%= row.rowClass %>">
+                    <% row.value.forEach(function(cell) { %>
+                        <td><%=cell %></td>
+                    <% }); %>
+                </tr>
+            <% } %>
         <% }); %>
     </table>
 
