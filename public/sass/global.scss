@@ -4,3 +4,18 @@ a {
   color: $blue;
   font-weight: bold;
 }
+
+#llorando {
+  background: url('../img/Llorando.jpg') fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#llorando h1{
+	font-size: 1000% !important;
+}
