@@ -1,5 +1,9 @@
 @import 'colores.scss';
 
+body{
+  background-color: $verdefondo;
+}
+
 #llorando {
   background: url('../img/Llorando.jpg') fixed;
   background-repeat: no-repeat;
@@ -13,6 +17,18 @@
 
 #llorando h1{
 	font-size: 1000% !important;
+}
+
+#llorando a{
+  font-size: 200% !important;
+  color: white;
+  text-decoration: underline;
+}
+
+#llorando a:hover{
+  font-size: 200% !important;
+  color: white;
+  text-decoration: underline;
 }
 
 #original{
@@ -31,4 +47,22 @@
 
 .waves-effect{
   background-color: $verdeflojo;
+}
+
+.error {
+  animation: breathing 1s ease-out infinite normal;
+  background-color: $rojoerror; 
+  color: white;   
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
 }

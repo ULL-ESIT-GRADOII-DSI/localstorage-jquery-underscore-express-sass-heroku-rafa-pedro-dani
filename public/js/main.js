@@ -1,8 +1,13 @@
 function main() {
     'use strict';
     var original = $('#original').val();
-    if (window.localStorage) {
-        localStorage.original = original;
+    if(original===""){
+        alert("El texto está vacío. Introduzca algo.");
+    }
+    else{
+        if (window.localStorage) {
+            localStorage.original = original;
+        }
     }
 }
 
