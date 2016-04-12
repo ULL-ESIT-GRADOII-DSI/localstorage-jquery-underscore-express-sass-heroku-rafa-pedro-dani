@@ -1,9 +1,4 @@
-$blue: #3ff;
-
-a {
-  color: $blue;
-  font-weight: bold;
-}
+@import 'colores.scss';
 
 #llorando {
   background: url('../img/Llorando.jpg') fixed;
@@ -18,4 +13,22 @@ a {
 
 #llorando h1{
 	font-size: 1000% !important;
+}
+
+#original{
+  height: 250px;
+}
+
+.btn-large{
+  margin-top: 10px;
+  background-color: $verdefuerte !important;
+  width: 100%;
+}
+
+.btn-large:hover{
+  background-color: $verdeflojo !important;
+}
+
+.waves-effect{
+  background-color: $verdeflojo;
 }

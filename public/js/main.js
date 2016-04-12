@@ -14,4 +14,5 @@ $(document).ready(function() {
     }
 
     $('#form').submit(main);
+    $(".button-collapse").sideNav();
 });

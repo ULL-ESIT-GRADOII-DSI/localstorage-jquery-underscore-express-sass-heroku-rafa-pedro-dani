@@ -1,13 +1,17 @@
 <% include header %>
     <% include navbar %>
 
-    <h1><%=title %></h1>
+	<div class="row">
+		<div class="col s10 offset-s1 center">
+			<h1>CSV Validator</h1>
+			<h5>Introduzca su CSV en el cuadro que se muestra a continuación:</h5>
+			<form action="/csv" method="post" id="form">
+        		<textarea name="csvData" id="original"></textarea>
+        		<button class="btn-large waves-effect" type="submit" id="boton_enviar">ENVIAR</button>
+    		</form>
+		</div>
+	</div>
 
-    <p>My first paragraph.</p>
 
-    <form action="/csv" method="post" id="form">
-        <textarea rows="4" cols="50" name="csvData" id="original"></textarea>
-        <input type="submit">
-    </form>
 
 <% include footer %>

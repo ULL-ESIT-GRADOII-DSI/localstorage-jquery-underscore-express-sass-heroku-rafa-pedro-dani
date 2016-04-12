@@ -1,7 +1,8 @@
 var express = require('express'),
     path = require('path'),
     logger = require('morgan'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    favicon = require('serve-favicon');
 
 var app = express();
 
@@ -54,7 +55,7 @@ if (app.get('env') === 'development') {
         res.render('error', {
             message: err.message,
             error: err,
-            title: 'error'
+            title: '¡ERROR!'
         });
     });
 }
