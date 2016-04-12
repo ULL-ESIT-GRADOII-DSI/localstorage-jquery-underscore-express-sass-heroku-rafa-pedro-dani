@@ -1,7 +1,9 @@
 #ETSII ULL Grado de Informatica 
-#Práctica:
+#Práctica: Comma Separated Values
 
-#Comma Separated Values
+##Bagdes
+[![David](https://img.shields.io/david/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani.svg?style=flat-square)](https://david-dm.org/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani#info=dependencies&view=table)
+[![David](https://img.shields.io/david/dev/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani.svg?style=flat-square)](https://david-dm.org/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-rafa-pedro-dani#info=devDependencies&view=table)
 
 For more information look at:
 
