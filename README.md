@@ -30,6 +30,7 @@ Hay que tener instaladas las gemas `sass` y `scss-lint`
 * heroku create
 * heroku apps
 * heroku logs
+* `heroku config:set NPM_CONFIG_PRODUCTION=false` .Para que heroku instale las dependencias en devdependencies de [package.json]
 
 ###Repositorio GitHuB
 
