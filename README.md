@@ -37,7 +37,7 @@ Hay que tener instaladas las gemas `sass` y `scss-lint`
 
 ###Página de la práctica en Heroku
 
-* [Web](https://secret-headland-16989.herokuapp.com/)
+* [Web](https://practicadsi.herokuapp.com/)
 
 ###Página del campus de la asignatura
 * [Campus Virtual DSI](https://campusvirtual.ull.es/1516/course/view.php?id=144)
