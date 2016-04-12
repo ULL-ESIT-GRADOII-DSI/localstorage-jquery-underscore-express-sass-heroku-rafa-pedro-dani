@@ -12,7 +12,6 @@ var gulp = require('gulp'),
 //                    mantener la tarea watch de sass
 //                    ejecutar la tarea sass, por si hubo algún cambioee
 gulp.task('serve', ['browser-sync', 'sass:watch', 'sass']);
-
 // Browser sync, espera a que nodemon se reinicie y si lo hace, recarga el
 // navegador del cliente.
 gulp.task('browser-sync', ['nodemon'], function() {
@@ -72,4 +71,7 @@ gulp.task('lint:jscs', function() {
 gulp.task('lint:scss', function() {
     return gulp.src('public/sass/*.scss')
         .pipe(scsslint());
+
 });
+//tarea por defecto que ejecuta todo para que el gulp del postinstall ejecute esta tarea.
+gulp.task('default',['serve','nodemon','sass']);
