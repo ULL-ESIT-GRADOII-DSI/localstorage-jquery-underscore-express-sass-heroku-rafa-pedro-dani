@@ -74,4 +74,4 @@ gulp.task('lint:scss', function() {
 
 });
 //tarea por defecto que ejecuta todo para que el gulp del postinstall ejecute esta tarea.
-gulp.task('default',['serve','nodemon','sass']);
+gulp.task('default',['sass']);
