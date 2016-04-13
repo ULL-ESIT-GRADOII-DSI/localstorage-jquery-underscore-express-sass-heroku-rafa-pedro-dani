@@ -50,19 +50,19 @@ body{
 }
 
 .error {
-  animation: breathing 1s ease-out infinite normal;
+  animation: breathing 2s ease-out infinite normal;
   background-color: $rojoerror; 
   color: white;   
 }
 
 @keyframes breathing {
   0% {
-    transform: scale(0.95);
+    transform: scale(0.9);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(0.95);
+    transform: scale(0.9);
   }
 }
